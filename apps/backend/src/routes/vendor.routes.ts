@@ -2,12 +2,12 @@ import {Router} from 'express';
 import {createVendor, getAllVendors,getVendorById,updateVendor} from '../controllers/vendor.controller';
 
 
-const router = Router();
+const vendorRouter = Router();
 
-router.post('/',createVendor);
-router.get('/', getAllVendors);
-router.get('/:id', getVendorById);
-router.patch('/:id',updateVendor);
+vendorRouter.post('/',createVendor);
+vendorRouter.get('/', getAllVendors);
+vendorRouter.get('/:id', getVendorById);
+vendorRouter.patch('/:id',updateVendor);
 
-export default router;
+export default vendorRouter;
 
